@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Nicodemuz\DoctrineFixturesTimingBundle\Command\LoadFixturesWithTimingCommand:
+        arguments:
+            $fixturesLoader: '@doctrine.fixtures.loader'
+            $entityManager: '@doctrine.orm.default_entity_manager'
+        tags: ['console.command']
