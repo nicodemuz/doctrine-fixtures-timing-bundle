@@ -1,0 +1,24 @@
+{
+    "name": "nicodemuz/doctrine-fixtures-timing-bundle",
+    "description": "A Symfony bundle to load Doctrine fixtures with timing information and a top slowest fixtures report",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nico Hiort af Ornäs",
+            "email": "first-name@warpspeed.solutions"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "symfony/console": "^^7.0",
+        "symfony/framework-bundle": "^^7.0",
+        "doctrine/doctrine-fixtures-bundle": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nicodemuz\\DoctrineFixturesTimingBundle\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
